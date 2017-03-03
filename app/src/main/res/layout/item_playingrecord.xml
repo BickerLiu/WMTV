@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+
+    <FrameLayout
+        android:id="@+id/fl_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/paying_background"
+        android:padding="2px">
+
+        <ImageView
+            android:id="@+id/iv_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/image_loading" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015年高考数学真题解析"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/list1_text_size" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="上次看到\n第一讲 1节 30分30秒"
+            android:textColor="#88FFFFFF"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@mipmap/fengexian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@mipmap/fengexian_course" />
+
+            <TextView
+                android:id="@+id/tv_Replay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/list_background"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="重播"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list2_text_size" />
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@mipmap/fengexian_course" />
+
+            <TextView
+                android:id="@+id/tv_Continued"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/list_background"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="续播"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list2_text_size" />
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@mipmap/fengexian_course" />
+
+            <TextView
+                android:id="@+id/tv_Next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/list_background"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="下集"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list2_text_size" />
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@mipmap/fengexian_course" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@mipmap/fengexian" />
+    </LinearLayout>
+</LinearLayout>

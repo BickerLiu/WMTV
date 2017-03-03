@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_begin_none_text"
+    android:orientation="horizontal"
+    tools:context="wanfang.bluemobi.com.wanfang.BeginActivity">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="7"></View>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="7"></View>
+
+        <ProgressBar
+            android:id="@+id/progressbar_begin"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbar_color" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"></View>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="7"></View>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@mipmap/xiaomiyysd_01"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="bottom|right"
+            android:layout_width="80dp"
+            android:layout_height="40dp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

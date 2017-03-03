@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">万门教育</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="wanmendaxuezhuye">万门大学主页</string>
+    <string name="wanmendaxue">万门大学</string>
+    <string name="wanmen100">wanmen100</string>
+    <string name="phone">电话：010—89940015</string>
+    <string name="email">邮箱：contact@wanmen.org</string>
+    <string name="wangzhi">网址：www.wanmen.org</string>
+    <string name="qq">QQ：3113579956</string>
+    <string name="scanf">扫描二维码下载应用</string>
+    <string name="auto_update">自动更新</string>
+    <string name="content1">小语种、商学院、文史哲、理化生、化妆、武术……你能想到的、想不到的课，都能在万门找到</string>
+    <string name="content2">课程设置，精心安排的课程大纲，20分钟一节的视频细分，只为给你最系统、清晰的学习思路……</string>
+    <string name="content3">穿着睡衣上课？课堂上手舞足蹈唱起歌？PPT上各种动图表情停不下来？来万门，遇见你没见过的麻辣教师</string>
+    <string name="content4">实地取景、影棚拍摄、多机位剪辑……创新的拍摄手法、专业的后期制作、只为给你最好的赏课体验</string>
+    <string name="title_activity_course_details">CourseDetailsActivity</string>
+    <string name="back">返回</string>
+    <string name="hascollection">收藏</string>
+    <string name="course_description">课程简介</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_playing">PlayingActivity</string>
+</resources>

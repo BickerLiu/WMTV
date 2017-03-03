@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bluemobi.wanmen">
+
+    <!-- 友盟及CC视频权限 -->
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于网络通信 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于存储已下载文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.type.television"
+        android:required="true" />
+
+    <application
+        android:name=".activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.BeginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+
+        <!-- 友盟 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 友盟自动更新appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55b7444e67e58e5d2c0001e5" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="xiaomi" />
+
+        <activity
+            android:name=".activity.EditMyCollectionActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.CourseDetailsActivity1"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_course_details"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HelpActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.PlayingActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_playing"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.MaxScreenActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape"
+            ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30px"
+    android:paddingRight="30px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#263040"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:gravity="center_vertical"
+                    android:text="万门是什么？"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <!--分割线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_1"
+                android:background="@mipmap/fengexian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_video"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/paying_background"
+                    android:focusable="true"
+                    android:padding="4px">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/wanmen_content1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/paying_background"
+                    android:padding="2px">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/wanmen_content2" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_1"
+            android:background="@mipmap/fengexian" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:gravity="center_vertical"
+                    android:text="课程特色"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <!--分割线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_1"
+                android:background="@mipmap/fengexian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"></View>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/wanmen_content11" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"></View>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="多元的知识领域"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#D15732" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/content1"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"></View>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/wanmen_content12" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="系统的课程安排"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#03A99F" />
+                    />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/content2"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"></View>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/wanmen_content13" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="生动的课堂风格"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#ECE59D" />
+                    />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/content3"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"></View>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/wanmen_content14" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"></View>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="精致的视屏展现"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#438293" />
+                    />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/content4"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

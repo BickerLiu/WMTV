@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--受欢迎，热门课程布局-->
+
+    <!--课程信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9">
+
+            <ImageView
+                android:id="@+id/imageView_fragment_popular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/bg_shiping"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/padding_1"
+            android:layout_height="match_parent"
+            android:background="@mipmap/fengexian_top"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_fragment_popular"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:background="#FF263040"
+            android:paddingTop="@dimen/padding_20"
+            android:paddingLeft="@dimen/padding_20"
+            android:paddingRight="@dimen/padding_20">
+
+            <TextView
+                android:id="@+id/textView_fragment_popular_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/textView_fragment_popular_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:lineSpacingMultiplier="1.5"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <TextView
+                android:id="@+id/textView_fragment_popular_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--RecyclerView-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="@dimen/padding_20">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView__fragment_popular"
+            android:scrollbars="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/left"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="45dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right"
+            android:layout_marginTop="45dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

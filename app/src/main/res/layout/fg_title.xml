@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF222A3D"
+    android:gravity="fill_horizontal"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_background"
+        android:gravity="center"
+        android:text="万门大学"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_background"
+            android:gravity="center"
+            android:scaleType="center"
+            android:src="@mipmap/icon_name" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:background="@mipmap/fengexian_course" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/title_home_noselect"
+            android:drawablePadding="5dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:background="@mipmap/fengexian_course" />
+
+    <LinearLayout
+        android:id="@+id/ll_group"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:background="@mipmap/fengexian_course" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/title_pay_noselect"
+            android:drawablePadding="5dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="播放记录"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:background="@mipmap/fengexian_course" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/title_collection_noselect"
+            android:drawablePadding="5dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="收藏课程"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text_size" />
+    </LinearLayout>
+</LinearLayout>

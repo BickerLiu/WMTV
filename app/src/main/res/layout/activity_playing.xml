@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PlayingActivity">
+
+
+
+    <SurfaceView
+        android:id="@+id/surfaceView_playing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_playing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@mipmap/bg_playutil">
+
+
+        <TextView
+            android:id="@+id/textView_playing_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="00:00:00/00:00:00"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#ffffff" />
+
+        <SeekBar
+            android:id="@+id/skbProgress_playing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_weight="1"
+            android:maxHeight="10dp"
+            android:minHeight="5dp"
+            android:focusable="false"
+            android:progressDrawable="@drawable/seekbar_style" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView_playing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/loading"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/iv_pause"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="#88333333">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/pause_blue"
+            />
+    </RelativeLayout>
+</RelativeLayout>

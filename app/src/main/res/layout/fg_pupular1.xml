@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="30px">
+    <!--受欢迎，热门课程布局-->
+
+    <!--课程信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9">
+
+            <ImageView
+                android:id="@+id/imageView_fragment_popular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_shiping" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/padding_1"
+            android:layout_height="match_parent"
+            android:background="@mipmap/fengexian_top" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_fragment_popular"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#FF263040"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_20"
+            android:paddingRight="@dimen/padding_20"
+            android:paddingTop="@dimen/padding_20">
+
+            <TextView
+                android:id="@+id/textView_fragment_popular_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView_fragment_popular_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:lineSpacingMultiplier="1.5"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView_fragment_popular_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--RecyclerView-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/padding_20"
+        android:layout_weight="7">
+
+
+        <HorizontalScrollView
+            android:id="@+id/sv_EndGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_EndGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="45dp"
+            android:src="@mipmap/left" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="45dp"
+            android:src="@mipmap/right" />
+
+    </RelativeLayout>
+
+</LinearLayout>
